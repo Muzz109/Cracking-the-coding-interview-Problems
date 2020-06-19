@@ -5,7 +5,6 @@ let str = "abcedefhia"
 function everyCharUnique(str) {
 
   let hasht = new Map();
-   let retval= false;
    str = str.split("");
 
  for(let i = 0; i< str.length; i++){
@@ -15,11 +14,11 @@ function everyCharUnique(str) {
             hasht[str[i]] = i
           }else{
               
-              return str[i];
+             return false
           }
        }
  
- return retval;
+ return true;
 }
 
 everyCharUnique(str);
@@ -28,6 +27,27 @@ Time Complexity :-O(n)
 Space Complexity :-O(n)
 
 -------------------------------------------------------------------------------------------
+with no additional datastructure required
+function everyCharUnique(str) {
+   str = str.split("");
+
+ for(let i = 0; i< str.length; i++){
+          
+          for(let j = i+1 ;j< str.length ;j++){
+          
+          if(str[i] == str[j]){
+          
+          return false
+          
+       }
+ 
+ return true;
+}
+
+everyCharUnique(str);
+
+Time Complexity :-O(n)
+Space Complexity :-O(n)
 
 
 
