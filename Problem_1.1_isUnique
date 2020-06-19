@@ -1,0 +1,25 @@
+
+let str = "abcedefhia"
+
+
+function everyCharUnique(str) {
+
+  let hasht = new Map();
+   let retval= false;
+   str = str.split("");
+
+ for(let i = 0; i< str.length; i++){
+          
+          if(hasht[str[i]] != undefined ){
+            
+            hasht[str[i]] = i
+          }else{
+              
+              return str[i];
+          }
+       }
+ 
+ return retval;
+}
+
+everyCharUnique(str);
