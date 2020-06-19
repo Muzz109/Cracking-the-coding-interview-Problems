@@ -23,3 +23,12 @@ function everyCharUnique(str) {
 }
 
 everyCharUnique(str);
+
+Time Complexity :-O(n)
+Space Complexity :-O(n)
+
+-------------------------------------------------------------------------------------------
+
+
+
+
