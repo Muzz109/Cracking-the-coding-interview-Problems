@@ -46,8 +46,8 @@ function everyCharUnique(str) {
 
 everyCharUnique(str);
 
-Time Complexity :-O(n)
-Space Complexity :-O(n)
+Time Complexity :-O(n * n)
+Space Complexity :-
 
 
 
