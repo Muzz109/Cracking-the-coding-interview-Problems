@@ -45,3 +45,5 @@ console.log(hastable)
 }
 
 perm(str1,str2)
+
+// Another  approach is add charters to hashma and if the count is evn for the second time return false; 
