@@ -1,0 +1,41 @@
+// One Aeay 
+
+// pale , ple --->true
+// pales ,pale ---> true
+// pale, bale ---> true
+// pale, bake -----> false
+
+// insert, remove ,replace a character
+
+//------------------------------------------------
+let str1 = "pale";
+let str2 = "bake";
+
+ var oneAway = function (str1,str2){
+    
+    str1 = str1.split('');
+    str2 = str2.split('');
+    let i =0;
+    let j=0;
+
+  if(str1.length > str2.length){
+
+    return true
+  }
+  else{
+    while(i<str1.length && j< str2.length){
+
+      if(str1[i] == str2[j]){
+
+        i++
+        j++
+      }
+      else{
+
+        return false
+      }
+    }
+  }
+}
+
+oneAway(str1,str2)
