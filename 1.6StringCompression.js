@@ -20,3 +20,4 @@ var cmpresdstr = function(arr) {
 };
 
 cmpresdstr(arr)
+------------------
